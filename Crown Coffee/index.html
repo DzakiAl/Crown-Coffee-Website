@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crown Coffee</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 57%;
+        }
+
+        header {
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0vw 3vw;
+            height: 6vw;
+        }
+
+        .brand {
+            display: flex;
+            flex-direction: row;
+            font-size: 4vw;
+        }
+
+        .firstname {
+            font-weight: 700;
+            color: #F9A602;
+        }
+
+        .lastname {
+            font-weight: 700;
+            color: #006D5B;
+            padding-left: 1vw;
+        }
+
+        .menu {
+            display: flex;
+            font-size: 1.3vw;
+        }
+
+        .menu li a {
+            padding: 2vw 2vw;
+        }
+
+        header .menu li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 2vw;
+            transition: all ease-in-out 0.5s;
+        }
+
+        header .menu li a:hover {
+            color: black;
+            transition: all ease-in-out 0.5s;
+        }
+
+        header .menu li {
+            list-style: none;
+            padding: 1vw;
+            border-radius: 0.5vw;
+        }
+
+        header .menu li:hover {
+            background-color: white;
+            border-radius: 0.5vw;
+            transition: all ease-in-out 0.5s;
+        }
+
+        .font {
+            color: white;
+            margin-top: 13%;
+            margin-left: 2vw;
+            font-size: 4vw;
+        }
+
+        .button {
+            display: block;
+            background-color: transparent;
+            border: 0.25vw solid white;
+            width: 12vw;
+            height: 4vw;
+            text-decoration: none;
+            text-align: center;
+            line-height: 4vw;
+            color: white;
+            margin-left: 2vw;
+            font-weight: 700;
+            font-size: 2vw;
+            margin-top: 0px;
+            transition: all ease-in-out 0.5s;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black;
+            transition: all ease-in-out 0.5s;
+        }
+
+        .font2 {
+            text-decoration: none;
+            color: white;
+        }
+
+        body {
+            animation: Fadein 1.5s;
+        }
+
+        @keyframes Fadein {
+            from {
+                opacity: 0;
+            }to {
+                opacity: 1;
+            }
+        }
+
+        @media (orientation: portrait) and (max-width: 480px) {
+            header {
+                height: 10vw;
+            }
+
+            .brand {
+                font-size: 7vw;
+            }
+
+            header .menu li a {
+                font-size: 3vw;
+            }
+        
+            .font {
+                margin-top: 65vw;
+                margin-right: 40vw;
+                font-size: 6vw;
+            }
+
+            .button {
+                width: 20vw;
+                height: 7vw;
+                line-height: 7vw;
+                font-size: 3.8vw;
+                border: 0.55vw solid white;
+                margin-bottom: 65vw;
+            }
+        }
+
+        @media (orientation: portrait) and (max-width: 1024px) and (min-width: 480px) {
+            header {
+                height: 10vw;
+            }
+
+            .brand {
+                font-size: 7vw;
+            }
+
+            header .menu li a {
+                font-size: 3vw;
+            }
+            
+            .font {
+                margin-top: 47vw;
+                font-size: 6vw;
+                margin-right: 40vw;
+            }
+
+            .button {
+                width: 20vw;
+                height: 8vw;
+                font-size: 3.5vw;
+                line-height: 8vw;
+                margin-bottom: 47vw;
+            }
+        }
+    </style>
+</head>
+<body background="crown coffee.png">
+    <header>
+        <div class="brand">
+            <p class="firstname">Crown</p>
+            <p class="lastname">Coffee</p>
+        </div>
+        <ul class="menu">
+            <li><a href="">Our Social</a></li>
+        </ul>
+    </header>
+    <h1 class="font">We are making the best<br>coffee in the world</h1>
+    <a class="button" href="crowncoffeemenu.html">See menu</a>
+</body>
+</html>
