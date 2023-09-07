@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crown Coffee</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 57%;
+        }
+
+        nav {
+            display: flex;
+            width: 100%;
+            height: 5vw;
+            background-color: moccasin;
+        }
+
+        .brand {
+            color: #F9A602;
+            font-size: 4vw;
+            text-decoration: none;
+            margin: 0.2% 0 0.2% 1%;
+        }
+
+        .brand span {
+            color: #006D5B;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 3%;
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.5vw;
+            position: relative;
+        }
+
+        .menu a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0.15vw; 
+            background-color: black;
+            transition: width 0.3s;
+        }
+
+        .menu a:hover::before {
+            width: 100%;
+        }
+
+        .content {
+            margin: 12% 0 12% 0;
+        }
+
+        .content h1 {
+            font-size: 6vw;
+            text-align: center;
+        }
+
+        .button {
+            display: block;
+            background-color: transparent;
+            border: 0.25vw solid white;
+            width: 17vw;
+            height: 4vw;
+            text-decoration: none;
+            text-align: center;
+            line-height: 4vw;
+            color: white;
+            margin-left: 2vw;
+            font-weight: 700;
+            font-size: 2vw;
+            transition: 0.5s ease;
+        }
+
+        .button:hover {
+            display: block;
+            background-color: moccasin;
+            transition: all ease-in-out 0.5s;  
+            color: black;
+            border: 0.25vw solid moccasin;
+        }
+
+        footer {
+            background-color: moccasin;
+            width: 100%;
+            height: 10vw;
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-size: 1.2vw;
+        }
+
+        .link2 {
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .link2:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            font-size: 1.2vw;
+            color: black;
+            margin-right: 3vw;
+        }
+
+        @media (orientation: portrait) and (max-width: 480px) {
+            nav {
+                height: 10vw;
+            }
+
+            .brand {
+                font-size: 6vw;
+                margin: 1.5%  1.5% 5%;
+            }
+
+            .menu {
+                margin-right: 6%;
+            }
+
+            .menu a {
+                font-size: 3vw;
+            }
+
+            .content {
+                margin: 30vh 0 30vh 0;
+            }
+
+            .content h1 {
+                font-size: 10vw;
+            }
+
+            .button {
+                width: 35vw;
+                height: 10vw;
+                font-size: 6vw;
+                line-height: 10vw;
+                border: 0.6vw solid white;
+            }
+
+            footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 25vw;
+            }
+
+            .link2 {
+                font-size: 3vw;
+            }
+
+            .copyright {
+                font-size: 3vw;
+            }
+        }
+
+        @media (orientation: portrait) and (max-width: 1024px) and (min-width: 480px) {
+            nav {
+                height: 10vw;
+            }
+
+            .brand {
+                font-size: 6vw;
+                margin: 1.5%  1.5% 5%;
+            }
+
+            .menu {
+                margin-right: 5%;
+            }
+
+            .menu a {
+                font-size: 3vw;
+            }
+
+            .content {
+                margin: 25vh 0 25vh 0;
+            }
+
+            .content h1 {
+                font-size: 10vw;
+            }
+
+            .button {
+                width: 35vw;
+                height: 10vw;
+                font-size: 6vw;
+                line-height: 10vw;
+                border: 0.6vw solid white;
+            }
+
+            footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 20vw;
+            }
+
+            .link2 {
+                font-size: 3vw;
+            }
+
+            .copyright {
+                font-size: 3vw;
+            }
+        }
+    </style>
+</head>
+<body background="Coffee website background.jpg">
+    <nav>
+        <a href="" class="brand"><b>Crown<span style="margin-left: 5%;">Coffee</span></b></a>
+        <div class="menu">
+            <a href="index.html"><b>Home</b></a>
+            <a href="crowncoffeemenu.html" style="margin-left: 6%;"><b>Menu</b></a>
+            <a href="reservation.html" style="margin-left: 6%;"><b>Reservation</b></a>
+        </div>
+    </nav>
+    <div class="content" align="center">
+        <h1>
+            "Savor the Moment,<br>
+            Sip by Sip"
+        </h1>
+        <a href="crowncoffeemenu.html" class="button">Our menu</a>
+    </div>
+    <footer>
+        <div class="link">
+            <p class="copyright">Crown Coffee © 2052</p>
+            <a class="link2" href="">Facebook</a>
+            <a class="link2" href=""style="margin-left: 3vw; margin-right: 3vw;">Instagram</a>
+            <a class="link2" href="">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
